@@ -21,14 +21,13 @@ extension UIScrollView {
     ///
     /// - Parameter complete: 完成回调
 //    func addRedreshHeader(complete: @escaping () -> Void) {
-    func addRedreshHeader(_ loadNewData: Selector) {
+    func addRefreshHeader(target: Any?, action: Selector) {
         refreshView = MKRefreshControl()
         guard let refreshView = refreshView else {
             return
         }
         self.addSubview(refreshView)
-        
-        refreshView.addTarget(nil, action: loadNewData, for: .valueChanged)
+        refreshView.addTarget(target, action: action, for: .valueChanged)
     }
     
     

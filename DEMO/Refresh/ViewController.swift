@@ -18,12 +18,12 @@ class ViewController: UIViewController{
         super.viewDidLoad()
 
         
-        tableView.addRedreshHeader(#selector(loadData))
+        tableView.addRefreshHeader(target: self, action: #selector(loadData))
     }
     
     
     //加载数据 具体由子类负责
-    func loadData() {
+    @objc private func loadData() {
         //如果子类不实现 默认关闭刷新
         let when = DispatchTime.now() + 3.0
         DispatchQueue.main.asyncAfter(deadline: when, execute: {
