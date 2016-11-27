@@ -15,6 +15,7 @@
 		B2162A781DE7398E00865454 /* MKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2162A771DE7398E00865454 /* MKRefreshControl.swift */; };
 		B2162A7A1DE7445900865454 /* MKRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2162A791DE7445800865454 /* MKRefreshView.swift */; };
 		B2162A7C1DE7446500865454 /* MKRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2162A7B1DE7446500865454 /* MKRefreshView.xib */; };
+		B2162A961DEA883F00865454 /* MKRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2162A951DEA883F00865454 /* MKRefresh.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B2162A771DE7398E00865454 /* MKRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKRefreshControl.swift; sourceTree = "<group>"; };
 		B2162A791DE7445800865454 /* MKRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKRefreshView.swift; sourceTree = "<group>"; };
 		B2162A7B1DE7446500865454 /* MKRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKRefreshView.xib; sourceTree = "<group>"; };
+		B2162A951DEA883F00865454 /* MKRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKRefresh.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B2162A771DE7398E00865454 /* MKRefreshControl.swift */,
+				B2162A951DEA883F00865454 /* MKRefresh.swift */,
 				B2162A791DE7445800865454 /* MKRefreshView.swift */,
 				B2162A7B1DE7446500865454 /* MKRefreshView.xib */,
 			);
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2162A7A1DE7445900865454 /* MKRefreshView.swift in Sources */,
+				B2162A961DEA883F00865454 /* MKRefresh.swift in Sources */,
 				B2162A671DE738E500865454 /* ViewController.swift in Sources */,
 				B2162A781DE7398E00865454 /* MKRefreshControl.swift in Sources */,
 				B2162A651DE738E500865454 /* AppDelegate.swift in Sources */,
@@ -319,6 +323,7 @@
 				B2162A751DE738E500865454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

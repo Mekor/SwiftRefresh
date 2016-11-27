@@ -8,22 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     //刷新控件
-    var myrefreshControl:MKRefreshControl?
+//    var myrefreshControl:MKRefreshControl?
     
     @IBOutlet weak var tableView: UITableView!
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //添加刷新控件
-        myrefreshControl = MKRefreshControl()
+
         
-        tableView.addSubview(myrefreshControl!)
-        //添加监听方法
-        myrefreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
-        
-//        myrefreshControl?.beginRefreshing()
+        tableView.addRedreshHeader(#selector(loadData))
     }
     
     
@@ -32,11 +27,8 @@ class ViewController: UIViewController {
         //如果子类不实现 默认关闭刷新
         let when = DispatchTime.now() + 3.0
         DispatchQueue.main.asyncAfter(deadline: when, execute: {
-            self.myrefreshControl?.endRefreshing()
-
+            print("加载数据...")
+            self.tableView.endRefreshing()
         })
     }
-
-
 }
-

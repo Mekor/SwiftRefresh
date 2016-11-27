@@ -150,8 +150,6 @@ class MKRefreshControl: UIControl {
         var inset = sv.contentInset
         inset.top -= MKRefreshOffset
         sv.contentInset = inset
-        
-        
     }
 }
 
