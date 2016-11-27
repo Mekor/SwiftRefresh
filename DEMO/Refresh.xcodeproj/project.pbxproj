@@ -76,8 +76,8 @@
 		B2162A761DE7394C00865454 /* MKRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				B2162A771DE7398E00865454 /* MKRefreshControl.swift */,
 				B2162A951DEA883F00865454 /* MKRefresh.swift */,
+				B2162A771DE7398E00865454 /* MKRefreshControl.swift */,
 				B2162A791DE7445800865454 /* MKRefreshView.swift */,
 				B2162A7B1DE7446500865454 /* MKRefreshView.xib */,
 			);
